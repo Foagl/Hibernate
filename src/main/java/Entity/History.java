@@ -5,24 +5,27 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "History")
+@Table(name = "history")
 public class History {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "idHistory")
+    @Column(name = "idhistory")
     private int idHistory;
-    @Column(name = "History")
+    @Column(name = "history")
     private double history;
-    @Column(name = "Date")
+    @Column(name = "date")
     private String date;
 
     public History() {
     }
-//    public History(double history, String date) {
-//        history = history;
-//        date = date;
-//    }
+
+    public History(double history, String date) {
+        this.history = history;
+        this.date = date;
+    }
+
+
     public int getIdHistory() {
         return idHistory;
     }
@@ -36,7 +39,7 @@ public class History {
     }
 
     public void setHistory(double history) {
-        history = history;
+        this.history = history;
     }
 
     public String getDate() {
@@ -44,7 +47,7 @@ public class History {
     }
 
     public void setDate(String date) {
-        date = date;
+        this.date = date;
     }
 
 }

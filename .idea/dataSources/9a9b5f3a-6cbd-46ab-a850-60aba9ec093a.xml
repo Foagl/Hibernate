@@ -27,21 +27,21 @@
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="12" parent="7" name="idHistory">
+    <column id="12" parent="7" name="idhistory">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="13" parent="7" name="History">
+    <column id="13" parent="7" name="history">
       <mandatory>1</mandatory>
-      <data-type>double|0</data-type>
+      <data-type>varchar(45)|0</data-type>
     </column>
-    <column id="14" parent="7" name="Date">
+    <column id="14" parent="7" name="date">
       <mandatory>1</mandatory>
       <data-type>varchar(45)|0</data-type>
     </column>
     <key id="15" parent="7" name="PRIMARY">
-      <columns>idHistory</columns>
+      <columns>idhistory</columns>
       <primary>1</primary>
     </key>
   </database-model>

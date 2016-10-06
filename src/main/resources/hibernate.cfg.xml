@@ -12,6 +12,7 @@
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.connection.autocommit">false</property>
 
         <mapping class="Entity.Users" />
         <mapping class="Entity.History" />
